@@ -11,7 +11,7 @@ class Server
             'max_request' => 10000,
             'dispatch_mode' => 2,
             'debug_mode'=> 1,
-            'task_worker_num' => 1
+            'task_worker_num' => 8
         ));
         $this->serv->on('Start', array($this, 'onStart'));
         $this->serv->on('Connect', array($this, 'onConnect'));
